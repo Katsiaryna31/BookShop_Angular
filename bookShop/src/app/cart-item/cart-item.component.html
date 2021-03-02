@@ -1,0 +1,8 @@
+<div class="book-in-cart">
+    <h2>{{book.name}}</h2>
+    <div>
+      <span>price: </span><span>{{book.price}}</span>
+    </div>
+    <button (click) = "addBook()">+Add</button><span>{{numberOfBooks}}</span>
+    <button (click) = "deleteBook()">-Delete</button>
+</div>

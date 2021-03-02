@@ -1,0 +1,9 @@
+.blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+app-book-shop,
+app-cart {
+    width: 45%;
+}

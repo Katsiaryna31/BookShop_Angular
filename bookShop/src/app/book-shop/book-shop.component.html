@@ -1,0 +1,5 @@
+<ul class="books">
+  <li *ngFor="let currentBook of books">
+    <app-book-component [book]="currentBook" (buy) = 'onBuy($event)'></app-book-component>
+  </li>
+</ul>

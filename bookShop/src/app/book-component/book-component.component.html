@@ -1,0 +1,13 @@
+<div class="book">
+    <h2>{{book.name}}</h2>
+    <div><span>description: </span>{{book.description}}</div>
+    <div>
+        <span>{{book.createDate}}</span>
+    </div>
+    <div>
+      <span>price: </span><span>{{book.price}}</span>
+      <span>category: </span><span>{{book.category}}</span>
+      <span>is available </span><span>{{book.isAvailable}}</span>
+    </div>
+    <button [disabled]="!book.isAvailable" (click) = "onBuy()">Buy</button>
+</div>

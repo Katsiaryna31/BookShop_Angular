@@ -1,0 +1,6 @@
+<h2 class="Cart-title">Cart</h2>
+<ul class="booksInCart">
+    <li *ngFor="let bookInCart of booksInCart">
+        <app-cart-item [book]="bookInCart" (delete) = 'onDelete($event)'></app-cart-item>
+      </li>
+</ul>
