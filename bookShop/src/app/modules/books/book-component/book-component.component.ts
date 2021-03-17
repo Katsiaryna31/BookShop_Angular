@@ -1,9 +1,9 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
-import { BookModel } from './../bookModel';
+import { BookModel } from '../../../bookModel';
 
 @Component({
-  selector: 'app-book-component',
+  selector: 'books-book-component',
   templateUrl: './book-component.component.html',
   styleUrls: ['./book-component.component.css']
 })
