@@ -12,9 +12,17 @@ export class AppComponent {
   title = 'Book Shop';
 
   boughtBooks : BookModel [] = [];
+  numberOfBooks: number = 1;
 
   onBuy(boughtBook: any) {
-    this.boughtBooks.push(boughtBook);
+    let boughtedIndex = this.boughtBooks.indexOf(boughtBook);
+    if (boughtedIndex === -1) {
+      boughtBook.numberOfBooks = 1;
+      this.boughtBooks.push(boughtBook);
+    } else {
+      boughtBook.numberOfBooks ++;
+    }
+    
   }
 
   onDelete(deletedBook: any) {

@@ -16,10 +16,6 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ngOnChanges() {
-    console.log(this.booksInCart);
-  }
-
   onDelete(deletedBook: any) {
     this.delete.emit(deletedBook);
   }

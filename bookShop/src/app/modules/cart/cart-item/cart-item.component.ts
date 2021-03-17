@@ -12,18 +12,16 @@ export class CartItemComponent implements OnInit {
 
   constructor() { }
 
-  numberOfBooks: number = 1;
-
   ngOnInit(): void {
   }
 
   addBook() {
-    this.numberOfBooks++;
+    this.book.numberOfBooks++;
   }
 
   deleteBook() {
-    this.numberOfBooks--;
-    if (this.numberOfBooks === 0) {
+    this.book.numberOfBooks--;
+    if (this.book.numberOfBooks === 0) {
       this.delete.emit(this.book);
     }
   }
